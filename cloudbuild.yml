@@ -2,7 +2,6 @@ steps:
   - name: node:12
     entrypoint: yarn
     args: ['install']
-
   - name: node:12
     entrypoint: yarn
     args: ['lint']
