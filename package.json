@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "yarn workspaces run test"
+    "test": "yarn workspaces run test",
+    "lint": "echo \"LINT!\"; exit 0"
   },
   "private": true,
   "workspaces": [
