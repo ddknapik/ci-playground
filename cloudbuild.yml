@@ -5,3 +5,7 @@ steps:
     args: ['lint']
   - name: 'gcr.io/cloud-builders/yarn'
     args: ['workspaces', 'info']
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['workspaces', 'info']
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['workspaces', 'run', 'test']
