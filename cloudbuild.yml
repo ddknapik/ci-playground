@@ -1,9 +1,8 @@
 steps:
-  - name: 'gcr.io/cloud-builders/yarn'
+  - name: node:12
+    entrypoint: yarn
     args: ['install']
-  - name: 'gcr.io/cloud-builders/yarn'
+
+  - name: node:12
+    entrypoint: yarn
     args: ['lint']
-  - name: 'gcr.io/cloud-builders/yarn'
-    args: ['workspaces', 'info']
-  - name: 'gcr.io/cloud-builders/yarn'
-    args: ['test']
