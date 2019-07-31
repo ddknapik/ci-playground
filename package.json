@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "yarn workspaces run test"
+  },
+  "private": true,
+  "workspaces": [
+    "basotho",
+    "xhosa",
+    "zulu"
+  ]
+}
