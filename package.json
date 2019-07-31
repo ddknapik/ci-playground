@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "yarn workspaces run test",
-    "lint": "yarn workspaces info"
+    "lint": "yarn workspaces run lint"
   },
   "private": true,
   "workspaces": [
