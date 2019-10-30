@@ -15,17 +15,7 @@ jobs:
           node-version: 12
       - run: yarn audit
 
-  install:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: yarn install
-
   lint:
-    needs: install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -35,11 +25,12 @@ jobs:
       - run: yarn lint
 
   test:
-    needs: install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn test
+      - run: |
+          yarn install
+          yarn test
